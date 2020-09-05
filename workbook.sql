@@ -14,9 +14,12 @@ use some_database;
 create table customer_table (
 item_id CHAR(10),
 description VARCHAR(50),
-unit_price INT)
+unit_price INT);
 
-
+create table merchandise_item (
+merchandise_item_id char(10),
+description varchar(50),
+unit_price int);
 
 -- Task 5 -----------------------------------
 
