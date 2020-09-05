@@ -32,18 +32,24 @@ set customer_id = "C000000002",
 customer_name = "John Doe";
 
 
+INSERT INTO merchandise_item
+SET
+merchandise_item_id = "BAMBOOBOOK",
+description = "Bamboo Notebook",
+unit_price = 200;
 
--- INSERT INTO merchandise_item
--- SET
--- merchandise_item_id = "BAMBOOBOOK",
--- description = "Bamboo Notebook",
--- unit_price = 200;
+INSERT INTO merchandise_item
+SET
+merchandise_item_id = "BAMBOOBOOK",
+description = "Dragon Painting",
+unit_price = 300;
 
--- INSERT INTO merchandise_item
--- SET
--- merchandise_item_id = "BAMBOOBOOK",
--- description = "Dragon Painting",
--- unit_price = 300;
+select * from merchandise_item;
+
+-- add a primary key for the merchandise_item table
+alter table merchandise_item
+add constraint
+merchandise_item_
 
 -- Task 6 -----------------------------------
 
