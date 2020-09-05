@@ -2,14 +2,19 @@
 show databases;
 
 -- Create the database
--- create Database some_database;
+create Database some_database;
 -- drop database some_database;
 
 
 
 -- Task 4 -----------------------------------
 -- create tables
-use some_database
+use some_database;
+
+create table customer_table (
+item_id CHAR(10),
+description VARCHAR(50),
+unit_price INT)
 
 
 
