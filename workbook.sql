@@ -1,8 +1,17 @@
 -- Task 3 -----------------------------------
+show databases;
 
--- START HERE!! --
+-- Create the database
+-- create Database some_database;
+-- drop database some_database;
+
+
 
 -- Task 4 -----------------------------------
+-- create tables
+use some_database
+
+
 
 -- Task 5 -----------------------------------
 
