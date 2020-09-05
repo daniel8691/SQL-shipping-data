@@ -11,10 +11,10 @@ create Database some_database;
 -- create tables
 use some_database;
 
-create table customer_table (
-item_id CHAR(10),
-description VARCHAR(50),
-unit_price INT);
+create table customer (
+customer_id char(10) primary key,
+customer_name varchar(50));
+
 
 create table merchandise_item (
 merchandise_item_id char(10),
@@ -23,13 +23,14 @@ unit_price int);
 
 -- Task 5 -----------------------------------
 
--- INSERT INTO customer
--- SET customer_id = "C000000001",
--- customer_name = "Harrison Kong";
+insert into customer
+set customer_id = "C000000001",
+customer_name = "Harrison Kong";
 
--- INSERT INTO customer
--- SET customer_id = "C000000001",
--- customer_name = "John Doe";
+insert into customer
+set customer_id = "C000000002",
+customer_name = "John Doe";
+
 
 
 -- INSERT INTO merchandise_item
