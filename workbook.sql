@@ -1,15 +1,15 @@
--- Task 3 -----------------------------------
+
 show databases;
 
 -- Create the database
-create Database some_database;
+create Database customer_database;
 -- drop database some_database;
 
 
 
--- Task 4 -----------------------------------
+
 -- create tables
-use some_database;
+use customer_database;
 
 create table customer (
 customer_id char(10) primary key,
@@ -55,7 +55,7 @@ where unit_price = 300;
 alter table merchandise_item
 add primary key (merchandise_item_id);
 
--- Task 6 -----------------------------------
+
 ---------------------------------------------
 -- CREATE INDEXES
 
@@ -117,7 +117,7 @@ add constraint item_id_fk
 foreign key (merchandise_item_id)
 references merchandise_item(merchandise_item_id);
 
-
+-- Database > Reverse Engineer > click next > select your database > create erd diagram
 
 
 
