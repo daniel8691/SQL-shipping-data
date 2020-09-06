@@ -87,7 +87,30 @@ description = "Thor Statue",
 unit_price = 2500;
 
 
--- Task 7 -----------------------------------
+-----------------------------------------
+
+-- create a customer_order table
+create table customer_order (
+customer_order_id  CHAR(10) PRIMARY KEY,
+customer_id char(10),
+FOREIGN KEY (customer_id)
+REFERENCES customer(customer_id)
+);
+
+-- insert into customer_order
+-- set customer_order_id = "
+
+create table customer_order_line_item (
+	customer_order_id CHAR(10),
+    customer_id char(10),
+    merchandise_item_id char(10),
+    quantity int,
+    primary key (customer_order_id, merchandise_item_id),
+    foreign key (customer_order_id)
+    references
+    customer_order(customer_order_id)
+    );
+
 
 
 
