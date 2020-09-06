@@ -23,4 +23,9 @@ from merchandise_item;
 select concat(char_length(description), " chars")
 from merchandise_item;
 
+--  Find the average of the unit price in the merchandise_item table
+--  format it to 2 decimal places and use country code "es_US" for US english
 
+select concat("$",format(avg(unit_price)/100, 2, "es_US"))
+as average_unit_price
+from merchandise_item;
