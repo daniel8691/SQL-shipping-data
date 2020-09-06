@@ -111,6 +111,15 @@ create table customer_order_line_item (
     customer_order(customer_order_id)
     );
 
+--  add foreign key referencing merchandise_item_id from the merchandise_item table
+alter table customer_order_line_item
+add constraint item_id_fk
+foreign key (merchandise_item_id)
+references merchandise_item(merchandise_item_id);
+
+
+
+
 
 
 
